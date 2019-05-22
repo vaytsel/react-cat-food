@@ -1,0 +1,24 @@
+body {
+    font-family: Trebuchet MS, sans-serif;
+    line-height: 1;    
+}
+
+.wrapper {
+    background: url('./img/bg.jpg') no-repeat center top / cover;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Exo2.0';
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 25px;
+}
