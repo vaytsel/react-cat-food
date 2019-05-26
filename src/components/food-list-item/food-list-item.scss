@@ -5,16 +5,68 @@
     transition: border 500ms ease-out;
 
     &:hover &__main {
-            border-color: #2ea8e6;
+        border-color: #2ea8e6;
+    }
+
+    &:hover &__bevel {
+        border-color: #2ea8e6;
+    }
+
+    &:hover &__weight {
+        background-color: #2ea8e6;
+    }
+
+    &.selected {
+        .food-list-item__main {
+            border-color: #d91667;
         }
 
-     &:hover &__bevel {
-            border-color: #2ea8e6;
+        .food-list-item__bevel {
+            border-color: #d91667;
         }
-        &:hover &__weight {
-            background-color: #2ea8e6;
+
+        .food-list-item__weight {
+            background-color: #d91667;
         }
-    
+    }
+
+    &.disabled {
+        .food-list-item__bevel {
+            border-color: #b3b3b3;
+        }
+
+        .food-list-item__main {
+            border-color: #b3b3b3;
+            cursor: default;
+            user-select: none;
+
+            * {
+                color: #b3b3b3;
+            }
+
+            &:after {
+                content: '';
+                background-color: rgba(242, 242, 242, .5);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 40%;
+            }
+
+            .food-list-item__weight {
+                background-color: #b3b3b3;
+                color: #fff;
+
+                * {
+                    color: #fff;
+                }
+            }
+        }
+        .food-list-item__desc {
+            color: #ffff66;
+        }
+    }
 
     &__main {
         background: url('img/cat.png') no-repeat -30px 190%/ 120%, #f2f2f2;
@@ -26,20 +78,21 @@
         cursor: pointer;
         position: relative;
         z-index: 1;
+        overflow: hidden;
         -webkit-clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 11%);
         clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 11%);
-        transition: border .2s ease-out;        
+        transition: border .2s ease-out;
     }
 
     &__bevel {
         z-index: 2;
         position: absolute;
-        left: 25px;
+        left: 24px;
         top: -9px;
         content: '';
         display: block;
         width: 1px;
-        height: 73px;
+        height: 72px;
         border-right: 4px solid #1698d9;
         transform: rotate(44deg);
         transition: border .2s ease-out;
@@ -84,6 +137,27 @@
 
         span {
             font-size: 50%;
+        }
+    }
+
+    &__desc {
+        color: #fff;
+        padding-top: 15px;
+
+        span {
+            color: #1698d9;
+            transition: all .2s ease-out;
+
+            &.buy-link {
+                cursor: pointer;
+                border-bottom: 1px dashed #1698d9;
+            }
+
+            &:hover {
+                color: #2ea8e6;
+                border-color: #1698d9;
+            }
+
         }
     }
 }
