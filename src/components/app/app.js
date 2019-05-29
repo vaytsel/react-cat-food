@@ -1,21 +1,39 @@
+/* eslint-disable no-undef */
 import React, {useState} from 'react';
 import './fonts/fonts.css';
 import './app.scss';
+import data from './data';
 import FoodList from './../food-list/food-list';
 
 function App() {
 
-    const [items, setItems] = useState([
-        { id: 1, with: 'c фуа-гра', portion: 10, mouse: 1, weight: '0,5', selected: false, disabled: false, happy: false},
-        { id: 2, with: 'c рыбой', portion: 40, mouse: 2, weight: '2', selected: false, disabled: false, happy: false},
-        { id: 3, with: 'c курой', portion: 100, mouse: 5, weight: '5', selected: false, disabled: true, happy: true}
-    ]);
+    const [items, setItems] = useState(data);
+
+    const toggleProperty = (arr, id, propName) => {
+        const idx = arr.findIndex((item) => item.id === id);
+        const oldItem = arr[idx];
+        const value = !oldItem[propName];
+
+        const item = { ...arr[idx], [propName]: value };
+        return [
+            ...arr.slice(0, idx),
+            item,
+            ...arr.slice(idx + 1)
+        ];
+    };
+    
+    const onSelected = (id) => {        
+        const itemsx = toggleProperty(items, id, 'selected');
+        setItems(itemsx);
+    };
 
     return (
         <div className="wrapper">
             <div className="container">
                 <h1 className="text-center">Ты сегодня покормил кота?</h1>
-                <FoodList items={items}/>
+                <FoodList items={items}
+                          onSelected={onSelected}               
+                />
             </div>  
         </div>              
     )
