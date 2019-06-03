@@ -32,13 +32,35 @@ function FoodListItem(props) {
     } else {
         descText = `Чего сидишь? Порадуй котэ, `;
     }
+    
+    let mouseLeave = true;
+    function onMouseLeave() {
+        return mouseLeave = true;
+    }    
+    function onMouseEnter() {
+        return mouseLeave = false;        
+    }    
+
+    function Head() {
+        if (props.selected && mouseLeave) {
+            return (
+                <div className="food-list-item__head">Котэ не одобряет?</div>
+            )
+        } 
+
+        return (
+            <div className="food-list-item__head">Сказочное заморское яство</div>
+        )
+    }
 
     return (  
         <li className={classNames}>
             <div className="food-list-item__bevel"></div>
             <div className="food-list-item__main" 
-                 onClick={props.disabled ? '' : props.onSelected}>                
-                <div className="food-list-item__head">Сказочное заморское яство</div>
+                 onClick={props.disabled ? '' : props.onSelected}
+                 onMouseLeave={onMouseLeave}
+                 onMouseEnter={onMouseEnter}>                
+                <Head/>
                 <div className="food-list-item__title">Нямушка</div>
                 <div className="food-list-item__with">{props.with}</div>
                 <div className="food-list-item__sum">

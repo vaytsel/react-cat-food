@@ -2,7 +2,7 @@ import React from 'react';
 import FoodListItem from './../food-list-item/food-list-item';
 import './food-list.scss';
 
-function FoodList({items, onSelected, onMouseLeave}) {   
+function FoodList({items, onSelected}) {   
 
     const elements = items.map((item) => {
         const { id, ...itemProps } = item;
