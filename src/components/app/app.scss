@@ -1,6 +1,6 @@
 body {
     font-family: Trebuchet MS, sans-serif;
-    line-height: 1;    
+    line-height: 1;
 }
 
 .wrapper {
@@ -21,4 +21,16 @@ h1 {
     font-size: 36px;
     color: #fff;
     padding-bottom: 25px;
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        height: auto;
+        display: flex;
+        padding: 1.5rem 0 0;
+    }
+
+    .container {
+        justify-content: flex-start;
+    }
 }

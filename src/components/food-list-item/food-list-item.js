@@ -1,18 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './food-list-item.scss';
+import Head from './head';
+import BuyLink from './buy-link';
 
 function FoodListItem(props) {
 
-    function BuyLink() {
-        if (!props.disabled && !props.selected) {
-            return (
-                <React.Fragment>
-                    <span className="buy-link" onClick={props.onSelected}>купи</span><span>.</span>
-                </React.Fragment >
-            )    
-        } 
-        return false;
-    }   
+    const [mouseLeave, setMouseLeave] = useState(false);    
 
     function declOfNum(number, titles) {
         let cases = [2, 0, 1, 1, 1, 2];
@@ -31,36 +24,17 @@ function FoodListItem(props) {
         descText = `Печалька, ${props.with} закончился.`;
     } else {
         descText = `Чего сидишь? Порадуй котэ, `;
-    }
-    
-    let mouseLeave = true;
-    function onMouseLeave() {
-        return mouseLeave = true;
     }    
-    function onMouseEnter() {
-        return mouseLeave = false;        
-    }    
-
-    function Head() {
-        if (props.selected && mouseLeave) {
-            return (
-                <div className="food-list-item__head">Котэ не одобряет?</div>
-            )
-        } 
-
-        return (
-            <div className="food-list-item__head">Сказочное заморское яство</div>
-        )
-    }
 
     return (  
-        <li className={classNames}>
+        <li className={classNames}
+            onMouseLeave={() => setMouseLeave(true)}
+            onMouseEnter={() => setMouseLeave(false)}>
             <div className="food-list-item__bevel"></div>
             <div className="food-list-item__main" 
-                 onClick={props.disabled ? '' : props.onSelected}
-                 onMouseLeave={onMouseLeave}
-                 onMouseEnter={onMouseEnter}>                
-                <Head/>
+                 onClick={props.disabled ? '' : props.onSelected}>                
+                <Head mouseLeave={mouseLeave}
+                      selected={props.selected}/>
                 <div className="food-list-item__title">Нямушка</div>
                 <div className="food-list-item__with">{props.with}</div>
                 <div className="food-list-item__sum">
@@ -71,7 +45,9 @@ function FoodListItem(props) {
             </div>
             <div className="food-list-item__desc text-center">
                 {descText}
-                <BuyLink/>
+                <BuyLink disabled={props.disabled} 
+                         selected={props.selected}
+                         onSelected={props.onSelected}/>
             </div>
         </li>        
     )
