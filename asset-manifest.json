@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-cat-food/static/css/main.e9881bda.chunk.css",
+    "main.js": "/react-cat-food/static/js/main.d28f1a01.chunk.js",
+    "main.js.map": "/react-cat-food/static/js/main.d28f1a01.chunk.js.map",
+    "runtime~main.js": "/react-cat-food/static/js/runtime~main.175ce37b.js",
+    "runtime~main.js.map": "/react-cat-food/static/js/runtime~main.175ce37b.js.map",
+    "static/js/2.46ce2592.chunk.js": "/react-cat-food/static/js/2.46ce2592.chunk.js",
+    "static/js/2.46ce2592.chunk.js.map": "/react-cat-food/static/js/2.46ce2592.chunk.js.map",
+    "index.html": "/react-cat-food/index.html",
+    "precache-manifest.35b34a237b8ebc5268e00d26425cddbe.js": "/react-cat-food/precache-manifest.35b34a237b8ebc5268e00d26425cddbe.js",
+    "service-worker.js": "/react-cat-food/service-worker.js",
+    "static/css/main.e9881bda.chunk.css.map": "/react-cat-food/static/css/main.e9881bda.chunk.css.map",
+    "static/media/fonts.css": "/react-cat-food/static/media/Exo2.0-Thin.a1c5c8b5.woff",
+    "static/media/app.scss": "/react-cat-food/static/media/bg.02eb6c01.jpg",
+    "static/media/food-list-item.scss": "/react-cat-food/static/media/cat.53d463d2.png"
+  }
+}
