@@ -1,7 +1,7 @@
 const data = [
     {
         id: 1,
-        with: 'c фуа-гра',
+        taste: 'c фуа-гра',
         portion: 10,
         mouse: 1,
         weight: '0,5',
@@ -12,7 +12,7 @@ const data = [
     },
     {
         id: 2,
-        with: 'c рыбой',
+        taste: 'c рыбой',
         portion: 40,
         mouse: 2,
         weight: '2',
@@ -23,7 +23,7 @@ const data = [
     },
     {
         id: 3,
-        with: 'c курой',
+        taste: 'c курой',
         portion: 100,
         mouse: 5,
         weight: '5',
