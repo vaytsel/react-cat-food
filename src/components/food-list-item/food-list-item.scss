@@ -63,6 +63,7 @@
                 }
             }
         }
+
         .food-list-item__desc {
             color: #ffff66;
         }
@@ -104,6 +105,7 @@
     &__head {
         color: #666666;
         padding-bottom: 15px;
+
         &.pink {
             color: #e52e7a;
         }
@@ -175,16 +177,19 @@
 @media (max-width: 1199.98px) {
     .food-list-item {
         &__bevel {
-                        left: 22px;
-                        top: -7px;
-                        height: 68px;
-                        transform: rotate(40deg);
+            left: 22px;
+            top: -7px;
+            height: 68px;
+            transform: rotate(40deg);
         }
+
         &__main {
-            background: url('img/cat.png') no-repeat -30px 150%/ 120%, #f2f2f2; }
-            &__desc {
-                    height: 41px;
-            }
+            background: url('img/cat.png') no-repeat -30px 150%/ 120%, #f2f2f2;
+        }
+
+        &__desc {
+            height: 41px;
+        }
     }
 
 }
@@ -194,12 +199,14 @@
         width: 50%;
         max-width: 50%;
         padding-bottom: 1.5rem;
+
         &__bevel {
             left: 24px;
             top: -8px;
             height: 72px;
             transform: rotate(43.75deg);
         }
+
         &__main {
             background: url('img/cat.png') no-repeat -30px 195%/ 120%, #f2f2f2;
         }
@@ -212,7 +219,7 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;            
+        align-items: center;
 
         &__bevel {
             left: 119px;
@@ -223,6 +230,7 @@
 @media (max-width: 575.98px) {
     .food-list-item {
         max-width: 320px;
+
         &__bevel {
             left: 24px;
         }
@@ -239,6 +247,7 @@
             height: 69px;
             transform: rotate(41.75deg);
         }
+
         &__main {
             background: url('img/cat.png') no-repeat -30px 150%/ 120%, #f2f2f2;
         }

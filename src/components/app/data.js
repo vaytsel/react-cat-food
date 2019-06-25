@@ -8,7 +8,7 @@ const data = [
         selected: false,
         disabled: false,
         happy: false,
-        desc: 'Печень утки разварная с артишоками.',
+        desc: 'Печень утки разварная с артишоками.'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const data = [
         selected: false,
         disabled: false,
         happy: false,
-        desc: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
+        desc: 'Головы щучьи с чесноком да свежайшая сёмгушка.'
     },
     {
         id: 3,
@@ -30,8 +30,8 @@ const data = [
         selected: false,
         disabled: true,
         happy: true,
-        desc: 'Филе из цыплят с трюфелями в бульоне.',
-    },
+        desc: 'Филе из цыплят с трюфелями в бульоне.'
+    }
 ];
 
 export default data;
