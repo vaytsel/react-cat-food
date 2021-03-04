@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-cat-food/static/css/main.786aa03a.chunk.css",
-    "main.js": "/react-cat-food/static/js/main.4fc04bee.chunk.js",
-    "main.js.map": "/react-cat-food/static/js/main.4fc04bee.chunk.js.map",
-    "runtime~main.js": "/react-cat-food/static/js/runtime~main.175ce37b.js",
-    "runtime~main.js.map": "/react-cat-food/static/js/runtime~main.175ce37b.js.map",
-    "static/js/2.46ce2592.chunk.js": "/react-cat-food/static/js/2.46ce2592.chunk.js",
-    "static/js/2.46ce2592.chunk.js.map": "/react-cat-food/static/js/2.46ce2592.chunk.js.map",
-    "index.html": "/react-cat-food/index.html",
-    "precache-manifest.fe598131ee084c2c9e5080cbcfd179b6.js": "/react-cat-food/precache-manifest.fe598131ee084c2c9e5080cbcfd179b6.js",
-    "service-worker.js": "/react-cat-food/service-worker.js",
-    "static/css/main.786aa03a.chunk.css.map": "/react-cat-food/static/css/main.786aa03a.chunk.css.map",
-    "static/media/fonts.css": "/react-cat-food/static/media/Exo2.0-Thin.a1c5c8b5.woff",
-    "static/media/app.scss": "/react-cat-food/static/media/bg.02eb6c01.jpg",
-    "static/media/food-list-item.scss": "/react-cat-food/static/media/cat.53d463d2.png"
+    "main.css": "/cat-food-shop/static/css/main.47a4ef95.chunk.css",
+    "main.js": "/cat-food-shop/static/js/main.0e942887.chunk.js",
+    "main.js.map": "/cat-food-shop/static/js/main.0e942887.chunk.js.map",
+    "runtime~main.js": "/cat-food-shop/static/js/runtime~main.c82d5372.js",
+    "runtime~main.js.map": "/cat-food-shop/static/js/runtime~main.c82d5372.js.map",
+    "static/js/2.7a761f5b.chunk.js": "/cat-food-shop/static/js/2.7a761f5b.chunk.js",
+    "static/js/2.7a761f5b.chunk.js.map": "/cat-food-shop/static/js/2.7a761f5b.chunk.js.map",
+    "index.html": "/cat-food-shop/index.html",
+    "precache-manifest.5c8bea7ee935f417ed82122be9ecdb62.js": "/cat-food-shop/precache-manifest.5c8bea7ee935f417ed82122be9ecdb62.js",
+    "service-worker.js": "/cat-food-shop/service-worker.js",
+    "static/css/main.47a4ef95.chunk.css.map": "/cat-food-shop/static/css/main.47a4ef95.chunk.css.map",
+    "static/media/fonts.css": "/cat-food-shop/static/media/Exo2.0-Thin.a1c5c8b5.woff",
+    "static/media/app.scss": "/cat-food-shop/static/media/bg.02eb6c01.jpg",
+    "static/media/food-list-item.scss": "/cat-food-shop/static/media/cat.53d463d2.png"
   }
 }
